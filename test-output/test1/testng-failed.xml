@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [test1]">
+  <listeners>
+    <listener class-name="RetryLogic.Transformer"/>
+  </listeners>
+  <test name="test2">
+    <classes>
+      <class name="RetryLogic.RetryTest"/>
+    </classes>
+  </test> <!-- test2 -->
+  <test name="test2(failed)">
+    <classes>
+      <class name="RetryLogic.RetryTest">
+        <methods>
+          <include name="Method11"/>
+        </methods>
+      </class> <!-- RetryLogic.RetryTest -->
+    </classes>
+  </test> <!-- test2(failed) -->
+</suite> <!-- Failed suite [test1] -->

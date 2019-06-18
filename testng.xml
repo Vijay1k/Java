@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "test1" >
+
+<listeners>
+     <listener class-name ="RetryLogic.Transformer"/>
+</listeners>
+
+<test name = "test2">
+
+
+<classes>
+      <class name ="RetryLogic.RetryTest"/>
+</classes>
+
+</test>
+</suite>
