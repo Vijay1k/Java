@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 11 21:41:54 IST 2019</td>
+<td>Started on:</td><td>Mon Jul 15 20:47:06 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4856 ms)</td>
+<tr><td>Total time:</td><td>25 seconds (25422 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,245 +67,18 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='RetryLogic.RetryTest.Method12()'><b>Method12</b><br>Test class: RetryLogic.RetryTest</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created
-from disconnected: Unable to receive message from renderer
-  (Session info: chrome=75.0.3770.80)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ABC-PC&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00CF7DF3+1474035]
-	Ordinal0 [0x00C707D1+919505]
-	Ordinal0 [0x00C0CB43+510787]
-	Ordinal0 [0x00C03C9E+474270]
-	Ordinal0 [0x00C03241+471617]
-	Ordinal0 [0x00C02DD9+470489]
-	Ordinal0 [0x00C02D95+470421]
-	Ordinal0 [0x00C0B526+505126]
-	Ordinal0 [0x00C02D52+470354]
-	Ordinal0 [0x00C0389F+473247]
-	Ordinal0 [0x00C03241+471617]
-	Ordinal0 [0x00C02DD9+470489]
-	Ordinal0 [0x00C02D95+470421]
-	Ordinal0 [0x00C09A31+498225]
-	Ordinal0 [0x00C02D52+470354]
-	Ordinal0 [0x00C0389F+473247]
-	Ordinal0 [0x00C03241+471617]
-	Ordinal0 [0x00C02DD9+470489]
-	Ordinal0 [0x00C02D95+470421]
-	Ordinal0 [0x00C07F30+491312]
-	Ordinal0 [0x00C02D52+470354]
-	Ordinal0 [0x00C0389F+473247]
-	Ordinal0 [0x00C03241+471617]
-	Ordinal0 [0x00C02DD9+470489]
-	Ordinal0 [0x00C02D95+470421]
-	Ordinal0 [0x00C0714F+487759]
-	Ordinal0 [0x00C02D52+470354]
-	Ordinal0 [0x00C0389F+473247]
-	Ordinal0 [0x00C03241+471617]
-	Ordinal0 [0x00C02DD9+470489]
-	Ordinal0 [0x00C02D95+470421]
-	Ordinal0 [0x00BFF854+456788]
-	Ordinal0 [0x00C02D52+470354]
-	Ordinal0 [0x00C02BEE+469998]
-	Ordinal0 [0x00C0D7F0+514032]
-	Ordinal0 [0x00BC15EA+202218]
-	Ordinal0 [0x00BC069D+198301]
-	Ordinal0 [0x00BBEECB+192203]
-	Ordinal0 [0x00BA5FF6+90102]
-	Ordinal0 [0x00BA765A+95834]
-	Ordinal0 [0x00BA7554+95572]
-	GetHandleVerifier [0x00E5231C+1249612]
-	GetHandleVerifier [0x00DA1575+525221]
-	GetHandleVerifier [0x00DA1310+524608]
-	Ordinal0 [0x00D05D28+1531176]
-	GetHandleVerifier [0x00DA1D4A+527226]
-	Ordinal0 [0x00C875F6+1013238]
-	Ordinal0 [0x00C8746F+1012847]
-	Ordinal0 [0x00C9365B+1062491]
-	Ordinal0 [0x00C9379F+1062815]
-	Ordinal0 [0x00C92745+1058629]
-	BaseThreadInitThunk [0x75B3EF3C+18]
-	RtlInitializeExceptionChain [0x77B13618+239]
-	RtlInitializeExceptionChain [0x77B135EB+194]
-
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at RetryLogic.RetryTest.Method12(RetryTest.java:21)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div><a href='#' onClick='toggleBox("stack-trace20474200", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace20474200'><pre>org.openqa.selenium.SessionNotCreatedException: session not created
-from disconnected: Unable to receive message from renderer
-  (Session info: chrome=75.0.3770.80)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ABC-PC&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00CF7DF3+1474035]
-	Ordinal0 [0x00C707D1+919505]
-	Ordinal0 [0x00C0CB43+510787]
-	Ordinal0 [0x00C03C9E+474270]
-	Ordinal0 [0x00C03241+471617]
-	Ordinal0 [0x00C02DD9+470489]
-	Ordinal0 [0x00C02D95+470421]
-	Ordinal0 [0x00C0B526+505126]
-	Ordinal0 [0x00C02D52+470354]
-	Ordinal0 [0x00C0389F+473247]
-	Ordinal0 [0x00C03241+471617]
-	Ordinal0 [0x00C02DD9+470489]
-	Ordinal0 [0x00C02D95+470421]
-	Ordinal0 [0x00C09A31+498225]
-	Ordinal0 [0x00C02D52+470354]
-	Ordinal0 [0x00C0389F+473247]
-	Ordinal0 [0x00C03241+471617]
-	Ordinal0 [0x00C02DD9+470489]
-	Ordinal0 [0x00C02D95+470421]
-	Ordinal0 [0x00C07F30+491312]
-	Ordinal0 [0x00C02D52+470354]
-	Ordinal0 [0x00C0389F+473247]
-	Ordinal0 [0x00C03241+471617]
-	Ordinal0 [0x00C02DD9+470489]
-	Ordinal0 [0x00C02D95+470421]
-	Ordinal0 [0x00C0714F+487759]
-	Ordinal0 [0x00C02D52+470354]
-	Ordinal0 [0x00C0389F+473247]
-	Ordinal0 [0x00C03241+471617]
-	Ordinal0 [0x00C02DD9+470489]
-	Ordinal0 [0x00C02D95+470421]
-	Ordinal0 [0x00BFF854+456788]
-	Ordinal0 [0x00C02D52+470354]
-	Ordinal0 [0x00C02BEE+469998]
-	Ordinal0 [0x00C0D7F0+514032]
-	Ordinal0 [0x00BC15EA+202218]
-	Ordinal0 [0x00BC069D+198301]
-	Ordinal0 [0x00BBEECB+192203]
-	Ordinal0 [0x00BA5FF6+90102]
-	Ordinal0 [0x00BA765A+95834]
-	Ordinal0 [0x00BA7554+95572]
-	GetHandleVerifier [0x00E5231C+1249612]
-	GetHandleVerifier [0x00DA1575+525221]
-	GetHandleVerifier [0x00DA1310+524608]
-	Ordinal0 [0x00D05D28+1531176]
-	GetHandleVerifier [0x00DA1D4A+527226]
-	Ordinal0 [0x00C875F6+1013238]
-	Ordinal0 [0x00C8746F+1012847]
-	Ordinal0 [0x00C9365B+1062491]
-	Ordinal0 [0x00C9379F+1062815]
-	Ordinal0 [0x00C92745+1058629]
-	BaseThreadInitThunk [0x75B3EF3C+18]
-	RtlInitializeExceptionChain [0x77B13618+239]
-	RtlInitializeExceptionChain [0x77B135EB+194]
-
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at RetryLogic.RetryTest.Method12(RetryTest.java:21)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-</pre></div></td>
-<td>4</td>
-<td>RetryLogic.RetryTest@340fab</td></tr>
+<td title='TestNG.java.Headless.headlless()'><b>headlless</b><br>Test class: TestNG.java.Headless</td>
+<td></td>
+<td>25</td>
+<td>TestNG.java.Headless@dbe50f</td></tr>
 </table><p>
 </body>
 </html>
